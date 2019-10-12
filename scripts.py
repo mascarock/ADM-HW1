@@ -67,8 +67,36 @@ if n >= 1 & n <= 20:
         #exponential function
         print (x**2)
 
+## Ex 6 - Function
+
+def is_leap(year):
+    leap = False
+
+    # Verbose version
+    # if year %400 == 0: leap = True
+    # else:
+    #     if ( year%4==0 and not year %100 == 0): leap = True
+    #     else: leap = False
+    
+    # Short version
+    if year %400 == 0 or ( year % 4 == 0 and not (year %100 == 0)): leap = True
+    return leap
+
+year = int(input())
+print (is_leap(year))
+
+## Ex 7 - Print Function
+
+if __name__ == '__main__':
+    n = int(input())
+
+for i in range(n): 
+    if (i !=0): print(i, end ="")
+print(n)
 
 # Data Types
+
+## Ex 1 - 
 
 # Strings
 
