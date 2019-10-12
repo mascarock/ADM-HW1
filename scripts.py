@@ -1,18 +1,14 @@
-# Problem 1 
-# 
-# 
+#### Problem 1 
+### Introduction
 
-#
-# *** Introduction ***
-
-# Ex 1 - Hello World
+## Ex 1 - Hello World
 
 # store the string "Hello, World!" in a variable
 hello = "Hello, World!"
 # print the variable
 print(hello)
 
-# Ex 2 - If, Else
+## Ex 2 - If, Else
 
 #!/bin/python3
 
@@ -41,7 +37,7 @@ else:
     if n > 20: output = 'Not Weird'
 print(output)
 
-# Ex 3  - Aritm op
+## Ex 3  - Aritm op
 
 if __name__ == '__main__':
     a = int(input())
@@ -54,14 +50,14 @@ print(a - b)
 print(a * b)
 
 
-# Ex 4 - Division
+## Ex 4 - Division
 if __name__ == '__main__':
     a = int(input())
     b = int(input())
 print (a // b)
 print (a / b)
 
-# Ex 5 - Loops
+## Ex 5 - Loops
 if __name__ == '__main__':
     n = int(input())
 # constraints
