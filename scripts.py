@@ -110,6 +110,100 @@ if __name__ == '__main__':
     # print the hash
     print(hash(tp))
 
+## Ex 2 - List Comprehensions
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    list = [ [i,j,k] 
+        for i in range (x+1) 
+        for j in range (y+1) 
+        for k in range (z+1) 
+        if i+j+k!=n #constraints
+        ]
+    print( list )
+
+## Ex 3 - Runner-Up Score!
+
+if __name__ == '__main__':
+    n = int(input())
+    # create the array for the scores
+    scores = list(map(int, input().split()))
+    # get the max
+    m = max(scores)
+    # store the temporary min (algo for min)
+    minScore = min(scores)
+    for x in scores:
+        if(x>minScore and x<m):
+            minScore = x
+    print(minScore)
+
+## Ex 4 - Nested Lists
+
+if __name__ == '__main__':
+    # get the number of students
+    studentsNumber = int(int(input()))
+    # grade and students for each student
+    gradeStudents = [[input(),float(input())] for i in range(0 , studentsNumber)]
+    # list of grades
+    grades = []
+    for grade in gradeStudents: grades.append(grade[1])
+    # Create a set of grades and find the min
+    setGrades = set(grades)
+    setGrades.remove(min(setGrades))   
+    # Compute the second lowest grade
+    minGrade = min(setGrades)
+    # Get the students name 
+    minStudents = [s[0] for s in gradeStudents if s[1] == minGrade]
+    # sort the set
+    sortedStudents = sorted(minStudents)
+    # print the students
+    for s in sortedStudents:
+        print(s)
+
+## Ex 5 - Finding the percentage
+
+if __name__ == '__main__':
+    n = int(input())o
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    # compute the mean
+    average = sum(student_marks[query_name])/3
+    # format the mean
+    print("%.2f" % average)
+
+## Ex 6 - Lists
+
+List = []
+result = []
+N = int(input())
+for i in range(N):
+    List = input().split()
+    if List[0] == "insert" :
+        position = int(List[1])
+        integer = int(List[2])
+        result.insert(position,integer)
+    if List[0] == "remove" :
+        rem_int = int(List[1])
+        result.remove(rem_int)
+    if List[0] == "append" :
+        append_int = int(List[1])
+        result.append(append_int)
+    if List[0] == "sort" :
+        result.sort()
+    if List[0] == "pop" :
+        result.pop()
+    if List[0] == "reverse" :
+        result.reverse()
+    if List[0] == "print" :
+        print(result)
+
 ### Strings
 
 ### Sets
