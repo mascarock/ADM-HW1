@@ -94,31 +94,43 @@ for i in range(n):
     if (i !=0): print(i, end ="")
 print(n)
 
-# Data Types
+### Data Types
 
-## Ex 1 - 
+## Ex 1 - Tuples
 
-# Strings
+if __name__ == '__main__':
+    # get it out of the way the first line
+    n = int(input())
+    # read the second line and split by whitespace
+    line = input().split()
+    # save to a list
+    integer_list = map(int, line)
+    # convert to a tuple of ints, which is hashable
+    tp = tuple(integer_list)
+    # print the hash
+    print(hash(tp))
 
-# Sets
+### Strings
 
-# Collections
+### Sets
 
-# Date and Time
+### Collections
 
-# Exceptions
+### Date and Time
 
-# Built-ins
+### Exceptions
 
-# Python Functionals
+### Built-ins
 
-# Regex and Parsing challenges
+### Python Functionals
 
-# XML
+### Regex and Parsing challenges
 
-# Closures and Decorations
+### XML
 
-# Numpy
+### Closures and Decorations
+
+### Numpy
 
 
 # § Problem 2
